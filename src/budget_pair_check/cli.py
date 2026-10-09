@@ -50,6 +50,7 @@ def _as_mapping(result: Any) -> dict[str, Any]:
         "count", "both_pass", "both_fail", "single_only_pass", "team_only_pass",
     )
     return {
+        "task_count": result["task_count"],
         "conditions": {
             "single": {field: single[field] for field in condition_fields},
             "team": {field: team[field] for field in condition_fields},
@@ -59,7 +60,7 @@ def _as_mapping(result: Any) -> dict[str, Any]:
 
 
 def _format_text(summary: dict[str, Any]) -> str:
-    rows: list[str] = []
+    rows: list[str] = [f"task_count: {summary['task_count']}"]
     for name in ("single", "team"):
         values = summary["conditions"][name]
         rows.extend(

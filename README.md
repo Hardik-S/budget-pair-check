@@ -2,7 +2,7 @@
 
 Budget Pair Check is an offline validator for already-normalized token-usage receipts. It verifies that a single-agent and team-agent run share the same task, model, harness, and replicate; that the declared task × replicate × setting matrix is complete; and that every run includes actual nonnegative input/output token counts within the declared per-run cap.
 
-It reports descriptive totals and paired pass/fail counts. It does not run agents or submitted code, collect usage, access a network, convert tokens to prices, or make benchmark, causal, or superiority claims. Public examples contain synthetic data only.
+It reports the distinct task count, descriptive per-setting run totals, and paired pass/fail counts. It does not run agents or submitted code, collect usage, access a network, convert tokens to prices, or make benchmark, causal, or superiority claims. Public examples contain synthetic data only.
 
 ## Quickstart
 

@@ -177,6 +177,7 @@ def analyze(manifest: Any, runs: Any) -> dict[str, Any]:
             team_only_pass += 1
 
     return {
+        "task_count": len(tasks),
         "conditions": conditions,
         "paired": {
             "count": len(tasks) * len(replicates),

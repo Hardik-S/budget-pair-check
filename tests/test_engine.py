@@ -20,6 +20,7 @@ def example_inputs():
 def test_complete_pairs_have_stable_descriptive_totals_and_frozen_shape():
     manifest, runs = example_inputs()
     expected = {
+        "task_count": 2,
         "conditions": {
             "single": {"count": 4, "passed": 2, "failed": 2, "pass_rate": 0.5,
                        "input_tokens": 460, "output_tokens": 110, "total_tokens": 570},
@@ -32,7 +33,8 @@ def test_complete_pairs_have_stable_descriptive_totals_and_frozen_shape():
     result = analyze(manifest, runs)
     assert result == expected
     assert analyze(manifest, runs) == expected
-    assert set(result) == {"conditions", "paired"}
+    assert result["task_count"] == len(manifest["tasks"])
+    assert set(result) == {"task_count", "conditions", "paired"}
     assert set(result["conditions"]["single"]) == {
         "count", "passed", "failed", "pass_rate", "input_tokens", "output_tokens", "total_tokens"
     }

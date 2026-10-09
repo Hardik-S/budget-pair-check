@@ -9,7 +9,7 @@ python -m pip install .
 budget-pair-check analyze examples/manifest.json examples/runs.json --format json
 ```
 
-**Synthetic result:** the included 2-task × 2-replicate example reports 4 runs per condition, 570 single-condition tokens and 810 team-condition tokens, and paired outcomes of 1 both-pass, 1 both-fail, 1 single-only-pass, and 1 team-only-pass.
+**Synthetic result:** the included example reports `task_count: 2`, 4 runs per condition, 570 single-condition tokens and 810 team-condition tokens, and paired outcomes of 1 both-pass, 1 both-fail, 1 single-only-pass, and 1 team-only-pass.
 
 **Technical finding:** the offline validator rejects incomplete or mismatched receipt matrices, malformed task hashes, missing or non-integer token counts, over-cap runs, duplicate JSON keys, and nonstandard non-finite JSON values before reporting descriptive totals.
 

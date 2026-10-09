@@ -17,9 +17,21 @@ def test_cli_json_success_and_exit_zero(capsys):
     assert code == 0
     assert out.err == ""
     parsed = json.loads(out.out)
+    assert parsed["task_count"] == 2
     assert parsed["conditions"]["single"]["total_tokens"] == 570
     assert parsed["conditions"]["team"]["total_tokens"] == 810
     assert parsed["paired"]["count"] == 4
+
+
+def test_cli_text_reports_distinct_task_count(capsys):
+    code = main([
+        "analyze", str(ROOT / "examples/manifest.json"), str(ROOT / "examples/runs.json"),
+        "--format", "text",
+    ])
+    out = capsys.readouterr()
+    assert code == 0
+    assert out.err == ""
+    assert out.out.startswith("task_count: 2\n")
 
 
 def test_cli_strict_json_rejects_duplicate_keys_and_nonfinite(tmp_path, capsys):
