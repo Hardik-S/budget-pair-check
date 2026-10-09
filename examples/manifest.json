@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "settings": ["single", "team"],
+  "budget_cap_tokens": 1000,
+  "tasks": [
+    {"id": "synthetic-task-a", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+    {"id": "synthetic-task-b", "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+  ],
+  "replicates": ["rep-1", "rep-2"]
+}

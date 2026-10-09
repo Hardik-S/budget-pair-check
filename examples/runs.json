@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "runs": [
+    {"run_id":"a-r1-single","task_id":"synthetic-task-a","task_sha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","setting":"single","replicate":"rep-1","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":100,"output_tokens":20,"test_passed":true,"evidence":"synthetic fixture only"},
+    {"run_id":"a-r1-team","task_id":"synthetic-task-a","task_sha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","setting":"team","replicate":"rep-1","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":150,"output_tokens":30,"test_passed":true,"evidence":"synthetic fixture only"},
+    {"run_id":"a-r2-single","task_id":"synthetic-task-a","task_sha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","setting":"single","replicate":"rep-2","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":110,"output_tokens":25,"test_passed":false,"evidence":"synthetic fixture only"},
+    {"run_id":"a-r2-team","task_id":"synthetic-task-a","task_sha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","setting":"team","replicate":"rep-2","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":160,"output_tokens":35,"test_passed":true,"evidence":"synthetic fixture only"},
+    {"run_id":"b-r1-single","task_id":"synthetic-task-b","task_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","setting":"single","replicate":"rep-1","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":120,"output_tokens":30,"test_passed":true,"evidence":"synthetic fixture only"},
+    {"run_id":"b-r1-team","task_id":"synthetic-task-b","task_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","setting":"team","replicate":"rep-1","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":170,"output_tokens":40,"test_passed":false,"evidence":"synthetic fixture only"},
+    {"run_id":"b-r2-single","task_id":"synthetic-task-b","task_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","setting":"single","replicate":"rep-2","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":130,"output_tokens":35,"test_passed":false,"evidence":"synthetic fixture only"},
+    {"run_id":"b-r2-team","task_id":"synthetic-task-b","task_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","setting":"team","replicate":"rep-2","model":"synthetic-model-v1","harness":"synthetic-harness-v1","input_tokens":180,"output_tokens":45,"test_passed":false,"evidence":"synthetic fixture only"}
+  ]
+}
